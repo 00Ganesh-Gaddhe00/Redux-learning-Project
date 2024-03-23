@@ -17,11 +17,11 @@ export default function Product(){
        dispatch(FetchProducts());
 
     },[])
-    if(status == 'loading'){
+    if(status === 'loading'){
         return(
             <h2>...Loading</h2>
         )
-    }else if(status == 'error'){
+    }else if(status ==='error'){
         return(
             <h2>OOPs, something went wrong!</h2>
         )
